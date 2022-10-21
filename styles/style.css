@@ -16,18 +16,18 @@ body{
     height: 200px;
     background-color: darkcyan;
     margin: 2rem auto;
-    transition: all;
+    transition: all 1s;
 }
 .container:hover {
     /* transform: rotate(390deg) scale(.5); */
     /* translate(x, y) */
     /* transform: perspective(900px) translate(17px, 0); */
-    transform: scale(0.4);
+    /* transform: scale(0.4) rotate(300deg); */
+    animation: awesomeAnimation 1s infinite;
 }
 
 
 /* Create an animation
-
 animation property has the following attributes
 - animation-name: Specifies the name of the keyframe you want to bind to the selector
 
@@ -53,4 +53,30 @@ inherit: Inherits this property from its parent element.
 /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
 /* .awesomeAnimation {
     animation: ;
+} */
+/* Approach 1 */
+@keyframes awesomeAnimation {
+    0%{
+        background-color: darkgoldenrod;
+        transform: translateX(10);
+    }
+    30%{
+        transform: scale(0.4);
+    }
+    50% {
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: translateX(50);
+    }
+}
+/* Second approach */
+/* @keyframes awesome {
+    from {
+        background-color: red;
+        color: black;
+    }
+    to{
+        transform: rotate(300deg);
+    }
 } */
