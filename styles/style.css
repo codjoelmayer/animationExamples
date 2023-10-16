@@ -23,7 +23,7 @@ body{
     /* translate(x, y) */
     /* transform: perspective(900px) translate(17px, 0); */
     /* transform: scale(0.4) rotate(300deg); */
-    animation: awesomeAnimation 1s infinite;
+    animation: awesome 1s infinite;
 }
 
 
@@ -71,7 +71,7 @@ inherit: Inherits this property from its parent element.
     }
 }
 /* Second approach */
-/* @keyframes awesome {
+@keyframes awesome {
     from {
         background-color: red;
         color: black;
@@ -79,4 +79,4 @@ inherit: Inherits this property from its parent element.
     to{
         transform: rotate(300deg);
     }
-} */
+}
